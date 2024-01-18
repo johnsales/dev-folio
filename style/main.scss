@@ -9,3 +9,65 @@
 @import "./sections/contact";
 @import "./sections/hero";
 @import "./sections/projects";
+
+#education, #skills {
+    background-color: #fff; /* White background */
+    padding: 4rem 0; /* Consistent padding */
+    text-align: center; /* Center align text */
+  }
+  
+  .section-title {
+    font-size: 2.8rem; /* Increased title font size */
+    margin-bottom: 2rem; /* Space below the title */
+    color: #333; /* Title text color */
+  }
+  
+//   .education-list, .skills-content {
+//     list-style-type: none; /* Remove default list styling */
+//     padding: 0; /* Remove default padding */
+//     margin: 0 auto; /* Center align the list */
+//     max-width: 800px; /* Max width of list to align center */
+//   }
+
+/* Additional media query for larger screens to ensure content utilizes more space */
+@media (min-width: 1024px) {
+    .education-list, .skills-content {
+      max-width: 80%; /* You can increase this percentage based on your preference */
+    }
+  }
+  
+  .education-list, .skills-content {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 90%; /* Use percentage for responsive width */
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+  }
+  
+  .education-list li, .skills-content h3, .skills-content p {
+    font-size: 1.8rem; /* Increased text font size */
+    margin-bottom: 1.5rem; /* Space between list items/paragraphs */
+    color: #444; /* Text color */
+  }
+  
+  .education-list li a {
+    color: #5b86e5; /* Style for the certification link */
+    text-decoration: none; /* Remove default text decoration */
+  }
+  
+  .education-list li a:hover {
+    text-decoration: underline; /* Underline on hover for the link */
+  }
+  
+  /* Add a bottom padding to the last section before the Experience section */
+  #skills {
+    padding-bottom: 6rem; /* Adjust this value to prevent overlap */
+  }
+  
+  /* Ensure Experience section has a top padding */
+  #projects {
+    padding-top: 6rem; /* Adjust this value to prevent overlap with Skills section */
+  }
+  

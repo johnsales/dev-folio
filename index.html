@@ -13,7 +13,8 @@ Have fun creating your portfolio on this template!!! -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
@@ -27,7 +28,9 @@ Have fun creating your portfolio on this template!!! -->
     <meta name="description" content="Johnathan Santiago, a skilled Software Engineer specializing in Java, Backend Development, and Cloud Technologies. Discover my work and projects in software engineering." />
 
     <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
-    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+    <!-- <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" /> -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+
 
     <!-- Add your primary-theme color for the value of content -->
     <meta name="theme-color" content="#36d1dc" />
@@ -99,6 +102,7 @@ Have fun creating your portfolio on this template!!! -->
       gtag("config", "UA-122228201-4")
     </script>
     <!-- End of Google Analytics -->
+
   </head>
   <body>
     <!-- Hero Section -->
@@ -138,17 +142,49 @@ Have fun creating your portfolio on this template!!! -->
               Software Engineer with 7+ years of experience specializing in Java and Cloud technologies. Expert in web application
               design, Agile development methodologies, project management, mentorship, and peer programming. Technology enthusiast
               and quick learner.            </p>
-            <p class="about-wrapper__info-text">
-              At Grid Dynamics, I've contributed significantly to The Home Depot's backend systems, focusing on streamlining operations and enhancing performance. My career also includes impactful work at the North-Rio-Grandense Research and Culture Foundation at Sinfo/UFRN Sig Projects, where I've navigated complex backend challenges and driven significant improvements in system efficiency.
-            </p>
+              <p class="about-wrapper__info-text">
+                Outside of my professional life, I'm an avid soccer player and fishing enthusiast, enjoying the balance and perspective these activities bring to my busy life. My commitment to community and personal growth extends to volunteering, where I've gained invaluable experiences and insights. These hobbies and volunteer activities not only enrich my life but also foster skills like teamwork, patience, and strategic thinking. I believe that the blend of my technical expertise and diverse personal interests shapes my unique approach to problem-solving and collaboration in the tech industry.
+             </p>
+        
             <span class="about-wrapper__cta">
-              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
-            </span>
+              <a href="./assets/resume_20231221.pdf" target="_blank" class="cta-btn cta-btn--resume">View Resume</a>
+          </span>
+          
           </div>
         </div>
       </div>
     </section>
     <!-- /END About Section -->
+  
+<!-- Education Section -->
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <ul class="education-list">
+      <li>MS Computer Science - Maharishi International University (MIU) – Fairfield, IA, USA – June 2023</li>
+      <li>BS Information Systems - Rio Grande do Norte University Center (UNI-RN) – Natal, Brazil - January 2016</li>
+      <li>Technical Residency Specialization in Legal IT – Federal University UFRN – Natal, Brazil - October 2019</li>
+      <li>
+        Associate Cloud Engineer Certified, Google - 
+        <a href="./assets/ace.pdf" target="_blank" rel="noopener noreferrer">2MU9a4</a> - December 2022
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-content">
+      <h3>Technical</h3>
+      <p>Java, JavaScript, C#, Python, Spring, Quarkus, .Net, Cloud Computing (GCP, PCF, AWS), Microservices, Docker, Kubernetes, Neoload, Redis, Cucumber, Relational/ NoSQL DBs, RabbitMQ, Wiremock, Junit, SOAP, REST, GraphQL, Vault, React, Angular 2+, HTML, CSS, Github Actions and Concourse Pipelines, Bash Script, Jest, Jira, New Relic, Grafana, Linux.</p>
+      <h3>Language</h3>
+      <p>Fluent in English and Portuguese</p>
+    </div>
+  </div>
+</section>
+<section></section>
 
     <!--Projects Section-->
     <section id="projects">
@@ -156,131 +192,121 @@ Have fun creating your portfolio on this template!!! -->
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Experience</h2>
 
-          <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Vault Rehoming</h3>
-              <p class="project-wrapper__text-info">
-                As a Software Engineer with Grid Dynamics (contracted to The Home Depot), from October 2021 to the present, I have played a pivotal role in architecting a robust daily CRDB snapshot feature on GKE using secure JavaScript automation, which has been instrumental in ensuring uninterrupted uptime and data availability for crucial business operations. 
-              </p>
+              <h3 class="company-name">Home Depot</h3>
+              <h4 class="project-title-role">
+                Vault Rehoming - <span class="role-title">Software Engineer</span>
+              </h4>
+              <p class="project-period">July 2023 - Present</p>          
+              <p class="project-description">
+                In my role at Home Depot, I have been instrumental in leading the Vault Rehoming project, an ambitious initiative to transition from a legacy system written in C with Tandem DB to a modern architecture utilizing Java Spring Boot and CockroachDB, deployed on PCF with certain functionalities leveraging GCP. My leadership extended to spearheading the replication of data from the legacy Tandem system to CRDB, ensuring the application's functionality for the critical 90-day historical data requirement. Recognizing the need for effective team coordination and monitoring, I pioneered the development of comprehensive Grafana Dashboards and fostered team collaboration through the establishment of dedicated Slack channels and regular code review sessions. A key achievement in this project was my design and implementation of a secure, daily CRDB snapshot feature on GKE using JavaScript automation. This feature played a crucial role in maintaining 100% uptime and ensuring uninterrupted data availability, thereby bolstering critical business operations. See the image below</p>
             </div>
             <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="./assets/cronjob.png" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+                  <img src="./assets/cronjob.png" class="img-fluid" alt="Vault Rehoming Project" />
                 </div>
               </a>
             </div>
           </article>
-          <!-- /END Project -->
-            <!-- Each .row is a project -->
-            <article class="row">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Sponsored Produtcs/Banners</h3>
-                <p class="project-wrapper__text-info">
-                  My contributions include a significant redesign of a legacy Spring Boot REST API into a more maintainable GraphQL and REST hybrid model, enhancing code readability by 20%. I've also optimized auto-scaling efficiency on Google Cloud VMs and improved API throughput by 50%, alongside implementing a Redis cache layer to reduce latency. My work has led to a 21% increase in product recommendation engagement through the integration of an internal API for user behavior tracking.
-                </p>
-                <div class="project-wrapper__text-btns">
+
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="company-name">Home Depot</h3>
+              <h4 class="project-title-role">
+                Sponsored Products/Banners - <span class="role-title">Software Engineer</span>
+              </h4>
+              <p class="project-period">October 2021 - June 2023</p>          
+              <p class="project-description">
+                In my role with the Ad Placement Team at Home Depot, I spearheaded the modernization of a six-year-old Spring Boot API. This extensive project involved the development of a new API using Java 17 and OpenFeign, deployed on Google Cloud Platform. A key part of the migration strategy was employing Cucumber BDD for feature-based validation of the application. My responsibilities extended to creating monitoring dashboards and collaborating closely with the SRE team, as well as conducting load tests using the Neoload tool. Additionally, I contributed to the development of React features for banner display and played a pivotal role in knowledge transfer, helping to onboard new engineers. Notable achievements in this project include:                
+              </p>
+              <ul class="project-bullets">
+                <li>Redesigning the legacy Spring Boot REST API into a GraphQL and REST hybrid model, enhancing code maintainability by 20%.</li>
+                <li>Significantly improving auto-scaling efficiency by transitioning to a more advanced CPU type on Google Cloud VMs, thereby reducing bootup CPU usage from 80% to 25% and preventing premature scale-ups.</li>
+                <li>Enhancing API performance by increasing throughput by 50% and reducing latency from 150ms to 30ms, achieved through connection pool optimization and implementation of a Redis cache layer.</li>
+                <li>Ensuring a smooth feature migration from the legacy to the new API using Cucumber-JVM, achieving feature parity with 50% less validation time, and improving unit test coverage by 80%.</li>
+                <li>Contributing to a 21% increase in product recommendation engagement and user interaction by integrating an internal API for tracking users' recently viewed products.</li>
+              </ul>
+                <div class="project-wrapper__text-btns">          
                   <a
                     href="https://www.homedepot.com/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    class="cta-btn cta-btn--hero cta-btn--projects">Home Depot Site</a>
+
+                    <a
+                    href="/assets/din-ref.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cta-btn cta-btn--hero cta-btn--projects">Manager Referral</a>
+
+                </div>
+              </div>
+          </article>
+          
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="company-name">FUNPEC - SINFO/UFRN</h3>
+              <h4 class="project-title-role">
+                Sipac & SigAdmin - <span class="role-title">Software Developer</span>
+              </h4>
+              <p class="project-period">June 2019 - January 2021</p>          
+              <p class="project-description">
+                <p>As a Software Developer I played a crucial role in enhancing university systems SIPAC and SIGAA. My work focused on boosting user security and system efficiency, notably through advanced password implementations in SIGADMIN.
+                  I was integral in transitioning from JNDI to RabbitMQ for data synchronization, achieving a significant 10% reduction in system dependencies and database connections, thereby enhancing operational efficiency.
+                </p>
+                <p>
+                  In addition, I led the maintenance and development of 'Inspectore', a key testing software. Post the original lead's departure, I took on the responsibility of refining the software based on tester feedback, adding new features, and ensuring its continuous smooth operation.  
+                  My role also involved close collaboration with cross-functional teams, providing essential development support and timely updates to various institutions, consistently meeting a stringent two-week SLA. This experience underscored my commitment to technical excellence and collaborative problem-solving in software development.</p>
+                </p>
+                <div class="project-wrapper__text-btns">          
+                  <a
+                    href="https://sipac.ufrn.br/public/jsp/portal.jsf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cta-btn cta-btn--hero cta-btn--projects">SIPAC</a>
+                    <a
+                    href="./assets/adson-ref.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cta-btn cta-btn--hero cta-btn--projects">Tech Lead - Referral</a>
+                </div>
+            </div>
+          </article>
+
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="company-name">TCE - IMD/UFRN</h3>
+              <h4 class="project-title-role">
+                Legis & SIAP AP Concessoes - <span class="role-title">Software Developer</span>
+              </h4>
+              <p class="project-period">October 2017 - Abril 2021</p>          
+              <p class="project-description">
+                <p>
+                  During my tenure at the Metropole Digital Institute, in collaboration with IMD/UFRN, from October 2017 to May 2019, I significantly contributed as a Software Developer in Natal, Brazil. My role encompassed the implementation of a customized agile methodology across two major projects, which streamlined project management and led to timely delivery and heightened client satisfaction. A notable achievement was the design and development of "Legis", an innovative norms and laws submission system. This system, crafted using C#, .NET, SQL Server, and Angular 2, revolutionized the auditing process by digitizing it, reducing validation time by 15%, and providing public access to laws. My commitment to effective communication was evident through bi-weekly meetings with an internal department, which enhanced the validation process of deliverables by 20%, surpassing client expectations. This dedication and skillset were acknowledged by Evandro Nunes Franco, a respected professional in the field, who emphasized my technical acumen, adaptability, and significant contributions to project success and digital transformation within the Court of Accounts of the State of Rio Grande do Norte.
+                </p>
+               
+                <div class="project-wrapper__text-btns">
+                  <a 
+                    href="https://imd.ufrn.br/portal/noticias/5496" 
+                    target="_blank" 
+                    class="cta-btn cta-btn--hero cta-btn--projects">Media</a>
+                  <a
+                    href="https://legis.tce.rn.gov.br/#/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="cta-btn cta-btn--hero cta-btn--projects"
-                    >See Live</a
-                  >
-                </div>
-              </div>
-  
-              <div class="project-wrapper__image">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <div class="thumbnail rounded">
-                    <img
-                      src="./assets/project.png"
-                      class="img-fluid"
-                      alt="Project Image"
-                      width="1366"
-                      height="767"
-                    />
-                  </div>
-                </a>
-              </div>
-            </article>
-
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">SIPAC / SigAdmin</h3>
-              <p class="project-wrapper__text-info">
-                TODO...
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://sipac.ufrn.br/public/login.do"
+                    >Legis</a>
+                  <a href="https://repositorio.ufrn.br/handle/123456789/44495" target="_blank" class="cta-btn cta-btn--hero cta-btn--projects">Master's Dissertation</a>
+                  <a
+                  href="./assets/evandro-ref.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a>
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+                  class="cta-btn cta-btn--hero cta-btn--projects">Client - Referral</a>
                 </div>
-              </a>
             </div>
           </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Legis</h3>
-              <p class="project-wrapper__text-info">
-                TODO... LINK: https://imd.ufrn.br/portal/noticias/5496
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://legis.tce.rn.gov.br/#/login"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="https://repositorio.ufrn.br/handle/123456789/44495" target="_blank" class="cta-btn text-color-main">Master's Dissertation</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
         </div>
       </div>
     </section>

@@ -11,7 +11,8 @@ section {
   .row {
     display: grid;
     gap: 2rem;
-    grid-template-columns: 1fr 2fr;
+    // grid-template-columns: 1fr 2fr;
+
     grid-template-rows: 1fr;
     @include respond(tab-port) {
       grid-template-columns: 1fr;
