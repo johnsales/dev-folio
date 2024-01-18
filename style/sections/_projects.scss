@@ -82,3 +82,53 @@
     }
   }
 }
+
+//
+.company-name {
+  font-weight: bold;
+  font-size: 2.2em;
+  margin-bottom: 0.5em; /* Adjusts spacing below the company name */
+}
+
+.project-title-role {
+  font-size: 1.6em; /* Slightly larger for emphasis */
+  margin-bottom: 0.3em; /* Adjusts spacing below the title */
+}
+
+.role-title {
+  font-weight: normal;
+  font-style: italic; /* Optional: for a different style */
+}
+
+.project-period {
+  font-weight: normal;
+  font-size: 1.6em;
+  color: #666; /* Optional: for a subtler appearance */
+  margin-bottom: 1em; /* Adjusts spacing before the description */
+}
+
+.project-description {
+  /* Regular text styling for description */
+}
+
+.project-bullets {
+  list-style: none; /* Removes the default bullet style */
+  padding-left: 20px; /* Space for custom bullet */
+  margin-top: 1em; /* Spacing above the list */
+  margin-bottom: 1em; /* Spacing below the list */
+
+  li {
+    font-size: 1.4em; /* Slightly smaller than the project description */
+    margin-bottom: 0.5em; /* Space between bullet points */
+    position: relative; /* Required for custom bullets */
+  }
+
+  li:before {
+    content: '•'; /* Custom bullet symbol */
+    color: #5b86e5; /* Bullet color */
+    font-size: 1.2em; /* Bullet size */
+    position: absolute;
+    left: -20px; /* Align bullet outside the text */
+    top: 0; /* Align bullet vertically with text */
+  }
+}
