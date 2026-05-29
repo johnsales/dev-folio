@@ -160,7 +160,7 @@ const certs = [
     name: 'Associate Cloud Engineer',
     issuer: 'Google Cloud',
     year: 'Dec 2022',
-    url: '/resume.pdf',
+    url: '/GCP_Associate.jpeg',
   },
 ]
 
@@ -247,7 +247,7 @@ export function Experience() {
 
                   {/* Roles within this company */}
                   <div className="space-y-8">
-                    {job.roles.map((role, ri) => (
+                    {job.roles.map((role) => (
                       <div
                         key={role.title}
                         className={`pl-4 border-l-2 ${
